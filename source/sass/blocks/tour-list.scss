@@ -1,0 +1,36 @@
+.tour-list {
+    @include list-style;
+
+    display: flex;
+    flex-wrap: wrap;
+    // border-bottom: 1px solid rgba($color: $grey--light, $alpha: 0.3);
+
+    
+    
+    
+    &::after {
+        content: "";
+
+        width: 845px;
+        height: 2px;
+        border-bottom: 1px solid rgba($color: $grey--light, $alpha: 0.3);
+    }
+}
+
+.tour-list__link {
+    font-family: $font-default;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: left;
+    color: rgba($color: $grey--light, $alpha: 0.3);
+}
+
+.tour-list__item {
+    margin-right: 100px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

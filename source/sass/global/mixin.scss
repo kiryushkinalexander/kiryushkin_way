@@ -1,0 +1,21 @@
+@mixin list-style {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin wrapper {
+    margin: 0 auto;
+
+    @media (min-width: $mobile-width) {
+        width: $mobile-width;
+    }
+
+    @media (min-width: $tablet-width) {
+        width: auto;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: $desktop-width;
+    }
+}

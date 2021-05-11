@@ -4,8 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Грейдирование HTMLACADEMY</title>
 </head>
 
@@ -13,7 +12,10 @@
     <header class="page-header">
         <div class="page-header__logo">
             <a class="page-header__logo-img" href="#">
-
+                <picture>
+                    <source media="(max-width: 768px)" srcset="img/logo-way-tablet.svg">
+                    <img src="img/logo-way-desktop.svg" width="57" height="22" alt="Логотип компании «Way»">
+                  </picture>
             </a>
         </div>
         <button class="page-header__button" type="button">
@@ -21,15 +23,15 @@
         </button>
         <nav class="page-header__nav nav">
             <ul class="nav__list">
-                <li class="nav__item">
-                    <a href="#">О путешествии</a>
+                <li>
+                    <a class="nav__item" href="#">О путешествии</a>
                 </li>
-                <li class="nav__item">
-                    <a href="#">Цены</a>
+                <li>
+                    <a class="nav__item" href="#">Цены</a>
                 </li>
             </ul>
         </nav>
-        <a href="tel:+749978468446" class="page__header-tel">
+        <a href="tel:+749978468446" class="page-header__tel">
             +7 (499) -784-684-46
         </a>
     </header>
@@ -38,8 +40,8 @@
         <h1 class="visually-hidden">Сайт туристической компании «Way»</h1>
         <section class="banner">
             <div class="banner__wrapper">
-                <h2>Путешествие по Европе</h2>
-                <p>В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая
+                <h2 class="banner__title">Путешествие по Европе</h2>
+                <p class="banner__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая
                     красота природы.</p>
                 <a href="#" class="button banner__button">смотреть тур</a>
             </div>
@@ -50,40 +52,40 @@
                 <h2 class="places__title">Места посещения</h2>
                 <p class="places__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
                 <ul class="places__list">
-                    <li class="places__item tour">
-                        <a href="#" class="tour__item tour__item--greece">
+                    <li class="places__item">
+                        <a class="tour tour--greece">
                             <div class="tour__button">
                                 <span class="tour__message">смотреть подробнее</span>
                             </div>
                             <span class="tour__name">Греция</span>
                         </a>
                     </li>
-                    <li class="places__item tour">
-                        <a href="#" class="tour__item tour__item--albania">
+                    <li class="places__item">
+                        <a class="tour tour--albania">
                             <div class="tour__button">
                                 <span class="tour__message">смотреть подробнее</span>
                             </div>
                             <span class="tour__name">Албания</span>
                         </a>
                     </li>
-                    <li class="places__item tour">
-                        <a href="#" class="tour__item tour__item--makedonia">
+                    <li class="places__item ">
+                        <a class="tour tour--macedonia">
                             <div class="tour__button">
                                 <span class="tour__message">смотреть подробнее</span>
                             </div>
                             <span class="tour__name">Македония</span>
                         </a>
                     </li>
-                    <li class="places__item tour">
-                        <a href="#" class="tour__item tour__item--montenegro">
+                    <li class="places__item">
+                        <a class="tour tour--montenegro">
                             <div class="tour__button">
                                 <span class="tour__message">смотреть подробнее</span>
                             </div>
                             <span class="tour__name">Черногория</span>
                         </a>
                     </li>
-                    <li class="places__item tour">
-                        <a href="#" class="tour__item tour__item--croatia">
+                    <li class="places__item">
+                        <a class="tour tour--croatia">
                             <div class="tour__button">
                                 <span class="tour__message">смотреть подробнее</span>
                             </div>

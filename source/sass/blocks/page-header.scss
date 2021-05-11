@@ -1,0 +1,33 @@
+.page-header {
+    @include wrapper;
+
+    display: flex;
+    align-items: center;
+    padding: 39px 0 38px 0;
+}
+
+// .page-header__logo {
+//     display: flex;
+//     align-items: center;
+// }
+
+.page-header__toggle {
+    display: none;
+}
+
+.page-header__nav {
+    margin-left: auto;
+}
+
+.page-header__tel {
+    font-family: $font-default;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    margin-right: 14px;
+    margin-left: 89px;
+    color: $grey--dark;
+    text-decoration: underline;
+}
