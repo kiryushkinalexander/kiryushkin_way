@@ -332,9 +332,12 @@ button {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  position: relative; }
   .tour-list::after {
     content: "";
+    position: absolute;
+    top: 35px;
     width: 845px;
     height: 2px;
     border-bottom: 1px solid rgba(44, 46, 63, 0.3); }
@@ -352,3 +355,457 @@ button {
   margin-right: 100px; }
   .tour-list__item:last-child {
     margin-right: 0; }
+
+.tour-card {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 636px;
+  padding-bottom: 40px;
+  color: rgba(44, 46, 63, 0.7); }
+  .tour-card--greece {
+    background-image: url("../img/tour-card-greece.png"); }
+
+.tour-card__wrapper {
+  width: 375px;
+  padding-bottom: 6px; }
+
+.tour-card__title {
+  position: relative;
+  font-size: 55px;
+  line-height: 90px;
+  font-weight: 600;
+  color: #2c2e3f;
+  margin: 0;
+  margin-bottom: 48px; }
+  .tour-card__title::after {
+    content: "";
+    position: absolute;
+    bottom: -17px;
+    left: 0;
+    width: 175px;
+    height: 3px;
+    background-color: #fe7865; }
+
+.tour-card__text {
+  margin: 0;
+  margin-bottom: 49px; }
+
+.tour-card__button {
+  width: 250px;
+  padding: 30px 30px; }
+
+.tour-card__comment {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 700px;
+  align-items: stretch;
+  background-repeat: no-repeat;
+  background-size: auto 100%; }
+
+.comment {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  color: rgba(44, 46, 63, 0.7);
+  width: 382px;
+  min-height: 307px;
+  margin: 0;
+  margin-top: -1px;
+  padding: 30px 30px;
+  background-color: #ffffff; }
+
+.comment__title {
+  position: relative;
+  display: block;
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 500;
+  color: #2c2e3f;
+  margin: 0;
+  margin-bottom: 33px; }
+  .comment__title::after {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    width: 68px;
+    height: 2px;
+    background-color: #fe7865; }
+
+.comment__text {
+  margin: 0;
+  margin-bottom: 31px; }
+
+.comment__author-wrapper {
+  display: flex;
+  align-items: center; }
+
+.comment__author-img {
+  display: block;
+  width: 38px;
+  height: 38px;
+  margin-right: 16px;
+  border-radius: 50%; }
+
+.comment__author {
+  margin-top: 5px;
+  font-weight: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  font-style: normal;
+  color: #2c2e3f; }
+
+.price {
+  margin: 0 auto;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 138px 0;
+  color: #2c2e3f; }
+  @media (min-width: 320px) {
+    .price {
+      width: 320px; } }
+  @media (min-width: 768px) {
+    .price {
+      width: auto; } }
+  @media (min-width: 1170px) {
+    .price {
+      width: 1170px; } }
+
+.price__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 770px; }
+
+.price__item {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  min-height: 672px;
+  padding: 40px 30px 30px 30px;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 1px rgba(44, 46, 63, 0.3);
+  border-radius: 6px; }
+  .price__item:hover, .price__item:focus {
+    box-shadow: 0 0 0 3px #fe7865; }
+  .price__item:hover .price__item-title,
+  .price__item:focus .price__item-title,
+  .price__item:hover .price__item-cost,
+  .price__item:focus .price__item-cost {
+    color: #fe7865; }
+  .price__item:hover .price__item-text::after,
+  .price__item:focus .price__item-text::after {
+    background-color: #fe7865;
+    opacity: 0.5; }
+
+.price__item-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 600;
+  text-align: justify;
+  color: #2c2e3f;
+  margin-bottom: 37px; }
+
+.price__item-cost {
+  font-size: 25px;
+  line-height: 34px;
+  font-weight: 700; }
+
+.price__item-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  margin: 0;
+  margin-bottom: 59px;
+  line-height: 24px; }
+  .price__item-text::after {
+    content: "";
+    position: absolute;
+    bottom: -28px;
+    left: 0;
+    width: 310px;
+    height: 1px;
+    background-color: rgba(44, 46, 63, 0.3); }
+
+.price__item-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding: 0 10px 0 30px; }
+
+.price__item-description {
+  position: relative;
+  margin-bottom: 15px;
+  line-height: 32px;
+  color: #2c2e3f; }
+  .price__item-description::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -34px;
+    width: 22px;
+    height: 22px;
+    background-image: url("../img/check.svg");
+    background-repeat: no-repeat; }
+
+.price__item-button {
+  margin-top: auto; }
+
+.price__description {
+  width: 289px;
+  padding-top: 30px; }
+
+.price__description-title {
+  position: relative;
+  font-size: 55px;
+  line-height: 90px;
+  font-weight: 600;
+  color: #2c2e3f;
+  margin: 0;
+  margin-bottom: 47px; }
+  .price__description-title::after {
+    content: "";
+    position: absolute;
+    bottom: -17px;
+    left: 0;
+    width: 175px;
+    height: 3px;
+    background-color: #fe7865; }
+
+.price__description-text {
+  margin: 0;
+  margin-right: -4px;
+  margin-bottom: 61px; }
+
+.price__tel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 500;
+  color: #2c2e3f;
+  margin: 0;
+  margin-right: 32px;
+  margin-bottom: 13px; }
+
+.price__tel-text {
+  margin-bottom: 13px; }
+
+.price__tel-phone {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000; }
+
+.questions {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  padding: 70px 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  color: #141517;
+  background-image: url("../img/form-background-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: 12px 0; }
+  @media (min-width: 320px) {
+    .questions {
+      width: 320px; } }
+  @media (min-width: 768px) {
+    .questions {
+      width: auto; } }
+  @media (min-width: 1170px) {
+    .questions {
+      width: 1170px; } }
+
+.questions__wrapper {
+  width: 656px;
+  margin-right: -12px;
+  padding: 50px 49px 49px 50px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(41, 54, 66, 0.1); }
+
+.questions__title {
+  display: block;
+  margin-bottom: 11px;
+  font-size: 25px;
+  line-height: 32px;
+  font-weight: 600; }
+
+.questions__text {
+  margin: 0;
+  margin-bottom: 24px; }
+
+.questions__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.questions__form-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%; }
+
+.questions__input {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #141517;
+  width: 269px;
+  margin-bottom: 25px;
+  padding: 16px 15px 15px 14px;
+  border: 1px solid rgba(44, 46, 63, 0.3); }
+  .questions__input-tel {
+    padding: 16px 15px 15px 50px; }
+  .questions__input::placeholder {
+    font-family: "Montserrat", "Arial", sans-serif;
+    color: #141517; }
+  .questions__input:invalid {
+    border: 1px solid #fe7865; }
+  .questions__input:hover, .questions__input:focus {
+    border: 1px solid #2c2e3f; }
+
+.questions__button {
+  min-width: 176px;
+  padding: 18px 10px 17px 10px; }
+
+.page-footer {
+  margin: 0 auto;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+  color: rgba(20, 21, 23, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 0;
+  padding-bottom: 74px;
+  padding-top: 170px; }
+  @media (min-width: 320px) {
+    .page-footer {
+      width: 320px; } }
+  @media (min-width: 768px) {
+    .page-footer {
+      width: auto; } }
+  @media (min-width: 1170px) {
+    .page-footer {
+      width: 1170px; } }
+
+.footer__tour {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 403px;
+  padding: 0 20px 0 13px;
+  border-right: 1px solid #d7d9df; }
+
+.footer__contacts {
+  margin-right: 60px;
+  margin-left: auto;
+  padding: 0 20px 0 20px; }
+
+.footer__message {
+  width: 379px;
+  padding-left: 49px;
+  border-left: 1px solid #d7d9df; }
+
+.footer__tour-title {
+  width: 100%;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #141517;
+  margin: 0;
+  margin-bottom: 21px;
+  text-align: center; }
+
+.footer__tour-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 50px; }
+  .footer__tour-list:nth-of-type(3n) {
+    margin-right: 0; }
+
+.footer__tour-item {
+  display: block;
+  margin-bottom: 10px;
+  line-height: 17px;
+  color: rgba(20, 21, 23, 0.5); }
+  .footer__tour-item:hover {
+    text-decoration: underline; }
+  .footer__tour-item:active {
+    color: #141517; }
+
+.footer__contacts-item {
+  display: flex;
+  margin-bottom: 17px;
+  color: #fe7865;
+  text-decoration: underline; }
+  .footer__contacts-item--mail {
+    font-size: 14px;
+    line-height: 17px; }
+  .footer__contacts-item--tel {
+    font-size: 16px;
+    line-height: 32px; }
+
+.footer__title {
+  width: 100%;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #141517;
+  margin: 0;
+  margin-bottom: 21px;
+  text-align: center; }
+
+.footer__text {
+  margin: 0; }
+
+.footer__contacts-title {
+  width: 100%;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 600;
+  color: #141517;
+  margin: 0;
+  margin-bottom: 21px;
+  text-align: center; }

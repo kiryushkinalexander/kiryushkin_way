@@ -1,0 +1,87 @@
+.questions {
+    @include wrapper;
+
+    display: flex;
+    justify-content: flex-end;
+    padding: 70px 0;
+    font-family: $font-default;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: $grey--dark;
+    background-image: url("../img/form-background-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: 12px 0;
+}
+
+.questions__wrapper {
+    width: 656px;
+    margin-right: -12px;
+    padding: 50px 49px 49px 50px;
+    background-color: $white;
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba($color: $grey--lighter, $alpha: 0.1);
+}
+
+.questions__title {
+    display: block;
+    margin-bottom: 11px;
+    font-size: 25px;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+.questions__text {
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.questions__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.questions__form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.questions__input {
+    font-family: $font-default;
+    font-size: 14px;
+    line-height: 17px;
+    color: $grey--dark;
+    width: 269px;
+    margin-bottom: 25px;
+    padding: 16px 15px 15px 14px;
+    border: 1px solid rgba($color: $grey--light, $alpha: 0.3);
+
+    &-tel {
+        padding: 16px 15px 15px 50px;
+    }
+
+    &::placeholder {
+        font-family: $font-default;
+        color: $grey--dark;
+    }
+
+    &:invalid {
+        border: 1px solid $main;
+    }
+
+    &:hover,
+    &:focus {
+        border: 1px solid $grey--light;
+    }
+}
+
+.questions__button {
+    min-width: 176px;
+    padding: 18px 10px 17px 10px;
+}

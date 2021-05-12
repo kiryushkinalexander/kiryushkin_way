@@ -1,0 +1,17 @@
+.page-footer {
+    @include wrapper;
+    
+    font-family: $font-default;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+    color: rgba($color: $grey--dark, $alpha: 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    padding-bottom: 74px;
+    padding-top: 170px;
+}
+
